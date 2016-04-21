@@ -26,5 +26,5 @@
 强度：标准，约6小时完成  
 
 加入扫二维码   
-<img src="./ask/test.png">
+<img src="./test.png">
 
