@@ -10,4 +10,4 @@
 3：食品 淀粉类 食物 （面包 ，八宝粥），肉类食品（如火腿肠）肉干之类的，1顿午餐以及备用干粮。建议准备好2L的饮用水。  
 
 下面的图片是大概的路线图，反正我是不清楚路线的。认真脸【探险以及准备好迷路，穿越各种奇怪的路况】
-<img src="http://jingyan.baidu.com/album/6f2f55a1bb90b3b5b93e6ce4.html?picindex=1">
+<img src="http://e.hiphotos.baidu.com/exp/w=200/sign=92e1f0803e6d55fbc5c671265d234f40/3b87e950352ac65ca44efa2df8f2b21193138a21.jpg">
