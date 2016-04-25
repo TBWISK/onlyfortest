@@ -18,5 +18,6 @@ def getRandom(num):
 # pass
     return ''.join(apps)
 # print
-for i in range(0,200):
-    print getRandom(6)
+if __name__ == '__main__':
+    for i in range(0,200):
+        print getRandom(6)

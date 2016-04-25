@@ -13,6 +13,7 @@ def add(imgName):
     draw.text(((width - 200), 10), '10086', font=myfont, fill=fillcolor)
     img.save("result.jpg", 'jpeg')
 
-
+if __name__ == '__main__':
+    pass
 # add("image.jpeg")
 
