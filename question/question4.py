@@ -3,6 +3,7 @@
 import MySQLdb
 from question2 import getRandom
 
+
 def connect():
     try:
         con = MySQLdb.connect(host='localhost',
@@ -13,13 +14,14 @@ def connect():
         cur = con.cursor()
         # items = cur.execute("select * from tbl")
         value = "222"
-        items = cur.execute('insert into tbl (code) values ("%s")'%value)
+        items = cur.execute('insert into tbl (code) values ("%s")' % value)
         print items
         con.commit()
         cur.close()
         con.close()
     except MySQLdb.Error, e:
         print e
+
 
 def connectdatabase(function):
     try:
@@ -41,20 +43,35 @@ def connectdatabase(function):
         print e
 
 
-
-def showcode(cur):
+def showcodeAll(cur):
     mysqlShell = 'select * from tbl'
     items = cur.execute(mysqlShell)
+    rows = cur.fetchall()
+    for row in rows:
+        print row
     # for item in items:
     #     print item
     print items
     pass
+
+
+def showcodeOneByone(cur):
+    mysqlShell = 'select * from tbl'
+    items = cur.execute(mysqlShell)
+    while True:
+        row = cur.fetchone()
+        if row == None:
+            break
+        print row
+    print items
+
 
 def getCode(num):
     apps = []
     for i in range(num):
         apps.append(getRandom(6))
     return apps
+
 
 def addcode(cur):
     apps = getCode(6)
@@ -66,19 +83,22 @@ def addcode(cur):
 
     pass
 
+
 def addcodes(cur):
+    """
+    error
+    """
     apps = getCode(6)
     print apps
-    apps  = [('asdsad','asdasds')]
+    apps = [('asdsad', 'asdasds')]
     # apps = set(apps)
     # print apps
     mysqlShell = 'insert into tbl (code) values (%s)'
-    items = cur.executemany(mysqlShell,apps)
+    items = cur.executemany(mysqlShell, apps)
     print items
-
 
 
 if __name__ == '__main__':
     # showcode()
     # print getCode(6)
-    connectdatabase(addcodes)
+    connectdatabase(showcodeOneByone)
