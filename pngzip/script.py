@@ -31,6 +31,7 @@ def getnewpng():
 
 def movePngToNew():
     newitems = getnewpng()
+    os.system("mkdir newpng")
     for item in newitems:
         newitem = item.replace("oldpng", 'newpng').replace(new_create_name, "")
         cmd = "mv %s %s " % (item, newitem)

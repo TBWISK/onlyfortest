@@ -1,3 +1,9 @@
+
+# 下面的是pngquant的使用文档   
+官网 https://pngquant.org/  
+script.py 封装了pngquant的简单压缩方法。把要压缩的png文件放进去到oldpng文件夹里面，执行脚本script.py文件，压缩好的文件会在newpng里面出现。
+
+
 # pngquant 2
 
 [This](https://github.com/pornel/pngquant) is the official `pngquant` and `libimagequant`.
