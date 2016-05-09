@@ -3,6 +3,8 @@
 官网 https://pngquant.org/  
 script.py 封装了pngquant的简单压缩方法。把要压缩的png文件放进去到oldpng文件夹里面，执行脚本script.py文件，压缩好的文件会在newpng里面出现。
 
+封装了jpegoptim的图片压缩方法。简单实现jpeg和jpg的压缩。jpegoptim可能需要实现编译，编译方法在文件下面~
+
 
 # pngquant 2
 
