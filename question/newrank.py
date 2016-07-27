@@ -1,4 +1,7 @@
 # coding:utf-8
+"""
+cloect newrand with newrand firefox 
+"""
 from selenium import webdriver
 import sys
 import time

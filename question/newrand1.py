@@ -1,4 +1,7 @@
 # coding:utf-8
+"""
+cloect newrand with newrand api 
+"""
 import md5
 import requests
 import uuid
@@ -43,8 +46,11 @@ data = {
     "xyz": src.hexdigest()
 }
 print "start"
-r = requests.post(base_url, headers=headers, data=data)
-items = (r.json().get("value"))
-for item in items:
-    print item.get("biz_info"), item.get("account"), item.get("name")
+# r = requests.post(base_url, headers=headers, data=data)
+# items = (r.json().get("value"))
+# for item in items:
+# print item.get("biz_info"), item.get("account"), item.get("name")
 # print len(item)
+import time
+old_time = time.time() - (60 * 60 * 24 * 2)
+print time.strftime('%Y-%m-%d', time.localtime(old_time))
