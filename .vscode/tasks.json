@@ -1,8 +1,17 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-   "command": "/usr/bin/python",
-  "isShellCommand": true,
-  "showOutput": "always",
-  "args": ["${file}"]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Initialize",
+      "type": "shell",
+      "command": "node scripts/setup.js || bun scripts/setup.js",
+      "windows": {
+        "command": "try{node scripts/setup.js}catch{try{bun scripts/setup.js}catch{}}"
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
 }
